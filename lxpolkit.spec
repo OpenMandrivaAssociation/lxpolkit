@@ -3,7 +3,7 @@
 Summary:	A simple PolicyKit authentication agent
 Name:		lxpolkit
 Version:	0.1.0
-Release:	%mkrel -c %git 1
+Release:	%mkrel -c %git 2
 Url:		http://www.lxde.org/
 Source0:	%{name}-%{version}-%{git}.tar.bz2
 Patch0:		lxpolkit-0.1.0-string-format.patch
