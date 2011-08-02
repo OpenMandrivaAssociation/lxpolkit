@@ -1,11 +1,11 @@
-%define git git20100330
+%define git git20110802
 
 Summary:	A simple PolicyKit authentication agent
 Name:		lxpolkit
 Version:	0.1.0
-Release:	%mkrel -c %git 2
+Release:	%mkrel -c %git 1
 Url:		http://www.lxde.org/
-Source0:	%{name}-%{version}-%{git}.tar.bz2
+Source0:	%{name}-%{version}.tar.gz
 Patch0:		lxpolkit-0.1.0-string-format.patch
 License:	GPLv3+
 Group:		System/Libraries
@@ -22,7 +22,7 @@ A simple PolicyKit authentication agent for LXDE.
 %patch0 -p0 -b .str
 
 %build
-./autogen.sh
+#./autogen.sh
 %configure2_5x
 %make
 
@@ -41,6 +41,6 @@ rm -rf %{buildroot}
 %files -f %{name}.lang
 %defattr(-,root,root)
 %{_sysconfdir}/xdg/autostart/%{name}.desktop
-%{_bindir}/%{name}
+%{_libdir}/%{name}
 %dir %{_datadir}/%{name}
 %{_datadir}/%{name}/ui/%{name}.ui
