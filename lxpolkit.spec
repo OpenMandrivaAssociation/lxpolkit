@@ -3,7 +3,7 @@
 Summary:	A simple PolicyKit authentication agent
 Name:		lxpolkit
 Version:	0.1.0
-Release:	2
+Release:	3
 Url:		http://www.lxde.org/
 Source0:	%{name}-%{version}.tar.gz
 Patch0:		lxpolkit-0.1.0-string-format.patch
@@ -13,6 +13,7 @@ BuildRequires:	polkit-1-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	intltool
 Provides:	polkit-agent
+Requires:	polkit
 
 %description
 A simple PolicyKit authentication agent for LXDE.
