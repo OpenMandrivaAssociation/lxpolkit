@@ -12,6 +12,7 @@ Group:		System/Libraries
 BuildRequires:	polkit-1-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	intltool
+Provides:	polkit-agent
 
 %description
 A simple PolicyKit authentication agent for LXDE.
