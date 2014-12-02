@@ -34,6 +34,7 @@ sed -i 's,NotShowIn=GNOME;KDE;,OnlyShowIn=LXDE,g' %{buildroot}%{_sysconfdir}/xdg
 
 %files -f %{name}.lang
 %{_sysconfdir}/xdg/autostart/%{name}.desktop
-%{_libdir}/%{name}
+%{_libexecdir}/%{name}
 %dir %{_datadir}/%{name}
+%dir %{_datadir}/%{name}/ui
 %{_datadir}/%{name}/ui/%{name}.ui
