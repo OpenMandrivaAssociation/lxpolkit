@@ -28,7 +28,7 @@ A simple PolicyKit authentication agent for LXDE.
 %makeinstall_std
 
 # make the polkit agent only start in LXDE
-sed -i 's,NotShowIn=GNOME;KDE;,OnlyShowIn=LXDE,g' %{buildroot}%{_sysconfdir}/xdg/autostart/%{name}.desktop
+sed -i 's,NotShowIn=GNOME;KDE;,OnlyShowIn=LXDE;Old,g' %{buildroot}%{_sysconfdir}/xdg/autostart/%{name}.desktop
 
 %find_lang %{name}
 
