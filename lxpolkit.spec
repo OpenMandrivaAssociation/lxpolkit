@@ -1,7 +1,7 @@
 Summary:	A simple PolicyKit authentication agent
 Name:		lxpolkit
 Version:	0.1.0
-Release:	4.1
+Release:	4.2
 Url:		http://www.lxde.org/
 Source0:	%{name}-%{version}.tar.gz
 Patch0:		lxpolkit-0.1.0-string-format.patch
@@ -28,7 +28,7 @@ A simple PolicyKit authentication agent for LXDE.
 %makeinstall_std
 
 # make the polkit agent only start in LXDE
-sed -i 's,NotShowIn=GNOME;KDE;,OnlyShowIn=LXDE,g' %{buildroot}%{_sysconfdir}/xdg/autostart/%{name}.desktop
+sed -i 's,NotShowIn=GNOME;KDE;,OnlyShowIn=LXDE;Old,g' %{buildroot}%{_sysconfdir}/xdg/autostart/%{name}.desktop
 
 %find_lang %{name}
 
