@@ -1,7 +1,9 @@
+%define _disable_rebuild_configure 1
+
 Summary:	A simple PolicyKit authentication agent
 Name:		lxpolkit
 Version:	0.1.0
-Release:	10
+Release:	11
 Url:		http://www.lxde.org/
 Source0:	%{name}-%{version}.tar.gz
 Patch0:		lxpolkit-0.1.0-string-format.patch
