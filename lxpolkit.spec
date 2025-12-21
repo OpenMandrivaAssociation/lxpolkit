@@ -9,6 +9,11 @@ Source0:	%{name}-%{version}.tar.gz
 Patch0:		lxpolkit-0.1.0-string-format.patch
 License:	GPLv3+
 Group:		System/Libraries
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(polkit-gobject-1)
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	intltool
